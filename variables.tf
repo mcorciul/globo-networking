@@ -25,11 +25,7 @@ variable "city" {
 variable "country" {
   type        = string
   description = "country"
-}
-
-variable "continent" {
-  type        = string
-  description = "continent"
+  default     = "Italy"
 }
 
 locals {
@@ -39,6 +35,5 @@ locals {
     billing_code = var.billing_code
     city         = var.city
     country      = var.country
-    continent    = var.continent
   }
 }
